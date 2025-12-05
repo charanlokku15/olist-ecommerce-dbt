@@ -3,6 +3,10 @@
 ## Overview
 End-to-end analytics engineering project modeling the Olist Brazilian e-commerce dataset using dbt Core and Databricks. Implements a medallion architecture and exposes clean fact/dimension tables and analytics marts.
 
+## Documentation
+Interactive dbt docs (lineage, models, tests):
+https://charanlokku15.github.io/olist-ecommerce-dbt/#!/overview
+
 ## Architecture
 - Bronze: Raw Olist CSVs loaded into Databricks Delta tables.
 - Silver (staging): `stg_*` models standardize schemas, types, and filter bad rows.
