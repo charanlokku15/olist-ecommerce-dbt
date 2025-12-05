@@ -1,0 +1,32 @@
+version: 2
+
+models:
+  - name: dim_customers
+    description: "One row per customer, including location."
+    columns:
+      - name: customer_id
+        description: "Primary key for the customer."
+        tests:
+          - not_null
+          - unique
+
+  - name: fct_orders
+    description: "One row per order, including status and key dates."
+    columns:
+      - name: order_id
+        description: "Primary key for the order."
+        tests:
+          - not_null
+          - unique
+
+  - name: fct_order_items
+    description: "One row per order item, with product and order info."
+    columns:
+      - name: order_id
+        description: "Foreign key to fct_orders."
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('fct_orders')
+                field: order_id

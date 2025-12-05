@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: bronze
+    database: workspace      # catalog
+    schema: default          # adjust if your bronze tables are elsewhere
+    tables:
+      - name: customers
+        identifier: bronze_olist_customers_dataset
+      - name: orders
+        identifier: bronze_olist_orders_dataset
+      - name: order_items
+        identifier: bronze_olist_order_items_dataset
+      - name: products
+        identifier: bronze_olist_products_dataset
+      - name: order_reviews
+        identifier: bronze_olist_order_reviews_dataset
