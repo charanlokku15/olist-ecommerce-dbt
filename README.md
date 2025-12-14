@@ -87,7 +87,7 @@ https://charanlokku15.github.io/olist-ecommerce-dbt/#!/overview
   How has average delivery time changed over time, and are recent months faster or slower than earlier periods ?
 
   - **Visualization**  
-  Line chart with `months_since_first_order` on the X‑axis, `retention_rate_pct` on the Y‑axis (Avg), and cohort_month as the series so each line is a cohort.
+  Bar chart with `order_month` on the X‑axis and `avg_delivery_days` on the Y‑axis (Avg), giving one time series that shows delivery performance trend.
 
 - **Screenshot**
   ![Average delivery days](images/avg_delivery_days.png)
