@@ -37,7 +37,7 @@ https://charanlokku15.github.io/olist-ecommerce-dbt/#!/overview
   Bar chart with `customer_segment` on the X‑axis and `avg_lifetime_revenue` on the Y‑axis (one bar per segment).
 
 - **Screenshot**
-  ![CLV by segment](images/clv_by_segment.png)
+  ![CLV by segment](/Users/charanlokku/Downloads/clv_by_segment.png)
 
 - Transforms raw Olist source tables into a well-modeled star schema suitable for BI tools and downstream analytics.
 - Implements clear separation of concerns with a medallion (bronze/silver/gold) architecture, making the pipeline easier to understand, debug, and extend.
