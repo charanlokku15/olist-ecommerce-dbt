@@ -48,6 +48,49 @@ https://charanlokku15.github.io/olist-ecommerce-dbt/#!/overview
 - **Screenshot**
   ![CLV by segment](images/clv_by_segment.png)
 
+#### 2. Cohort Retention Over Time
+
+- **Business question**  
+  After customers place their first order in a given month, what percentage return in the following months, and are newer cohorts retaining better or worse than older ones ?
+
+  - **Visualization**  
+  Line chart with `months_since_first_order` on the X‑axis, `retention_rate_pct` on the Y‑axis (Avg), and cohort_month as the series so each line is a cohort.
+
+- **Screenshot**
+  ![Cohort retention](images/cohort_retention.png)
+
+  #### 3. Top Products by Revenue
+
+- **Business question**  
+  Which products generate the most revenue so merchandising, inventory, and campaigns can prioritize true best sellers ?
+
+  - **Visualization**  
+  Horizontal bar chart with `total_revenue` on the X‑axis, `product_id` on the Y‑axis (Group by product_id), sorted by SUM(total_revenue) descending.
+
+- **Screenshot**
+  ![Top products by revenue](images/top_products.png)
+
+  #### 4. Orders by Customer State
+
+- **Business question**  
+  How is order volume distributed across Brazilian states, and which regions matter most for logistics and growth decisions ?
+
+  - **Visualization**  
+  Bar chart with `customer_state` on the X‑axis and `orders_count` on the Y‑axis (Sum), one bar per state.
+
+- **Screenshot**
+  ![Orders by state](images/orders_by_state.png)
+
+  #### 5. Average Delivery Days by Month
+
+- **Business question**  
+  How has average delivery time changed over time, and are recent months faster or slower than earlier periods ?
+
+  - **Visualization**  
+  Line chart with `months_since_first_order` on the X‑axis, `retention_rate_pct` on the Y‑axis (Avg), and cohort_month as the series so each line is a cohort.
+
+- **Screenshot**
+  ![Average delivery days](images/avg_delivery_days.png)
 
 
 ## Why This Tech Stack?
