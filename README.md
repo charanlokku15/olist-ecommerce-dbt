@@ -26,9 +26,18 @@ https://charanlokku15.github.io/olist-ecommerce-dbt/#!/overview
 
 ## What This Project Achieves
 
-## Key Analytic Queries & Visualizations
+- Transforms raw Olist source tables into a well-modeled star schema suitable for BI tools and downstream analytics.
+- Implements clear separation of concerns with a medallion (bronze/silver/gold) architecture, making the pipeline easier to understand, debug, and extend.
+- Provides analytics tables that directly answer business questions:
+  - Which customers are most valuable over their lifetime?
+  - How do monthly cohorts retain over time?
+  - Which products drive the most revenue and have the best/worst reviews?
+- Enforces data quality with tests and a custom business rule to prevent negative revenue.
+- Publishes interactive dbt documentation (models, columns, tests, lineage) via GitHub Pages.
 
-### 1. Customer Lifetime Value by Segment
+### Key Analytic Queries & Visualizations
+
+#### 1. Customer Lifetime Value by Segment
 
 - **Business question**  
   Which customer segments generate the highest lifetime revenue so marketing and retention can focus on the most valuable customers?
@@ -39,14 +48,7 @@ https://charanlokku15.github.io/olist-ecommerce-dbt/#!/overview
 - **Screenshot**
   ![CLV by segment](images/clv_by_segment.png)
 
-- Transforms raw Olist source tables into a well-modeled star schema suitable for BI tools and downstream analytics.
-- Implements clear separation of concerns with a medallion (bronze/silver/gold) architecture, making the pipeline easier to understand, debug, and extend.
-- Provides analytics tables that directly answer business questions:
-  - Which customers are most valuable over their lifetime?
-  - How do monthly cohorts retain over time?
-  - Which products drive the most revenue and have the best/worst reviews?
-- Enforces data quality with tests and a custom business rule to prevent negative revenue.
-- Publishes interactive dbt documentation (models, columns, tests, lineage) via GitHub Pages.
+
 
 ## Why This Tech Stack?
 - **dbt Core**
