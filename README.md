@@ -25,6 +25,20 @@ https://charanlokku15.github.io/olist-ecommerce-dbt/#!/overview
   - `products_snapshot` (tracks changes in product attributes over time)
 
 ## What This Project Achieves
+
+## Key Analytic Queries & Visualizations
+
+### 1. Customer Lifetime Value by Segment
+
+- **Business question**  
+  Which customer segments generate the highest lifetime revenue so marketing and retention can focus on the most valuable customers?
+
+  - **Visualization**  
+  Bar chart with `customer_segment` on the X‑axis and `avg_lifetime_revenue` on the Y‑axis (one bar per segment).
+
+- **Screenshot**
+  ![CLV by segment](images/clv_by_segment.png)
+
 - Transforms raw Olist source tables into a well-modeled star schema suitable for BI tools and downstream analytics.
 - Implements clear separation of concerns with a medallion (bronze/silver/gold) architecture, making the pipeline easier to understand, debug, and extend.
 - Provides analytics tables that directly answer business questions:
